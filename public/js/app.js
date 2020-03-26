@@ -13,7 +13,7 @@ weatherForm.addEventListener("submit", (event) => {
     .then(response => response.json())
     .then(data => {
       if (data.error) {
-        return document.querySelector("#weather-results-1").textContent = data.error;
+        return results1.textContent = data.error;
       }
 
       results1.textContent = data.location;
